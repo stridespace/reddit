@@ -58,7 +58,7 @@ apt-get remove $APTITUDE_OPTIONS $(dpkg-query  -W -f='${binary:Package}\n' | gre
 apt-get autoremove $APTITUDE_OPTIONS
 
 # install prerequisites
-cat <<PACKAGES | xargs apt-get install $APTITUDE_OPTIONS
+cat <<PACKAGES | xargs apt-get install --allow-downgrades $APTITUDE_OPTIONS
 netcat-openbsd
 git-core
 
