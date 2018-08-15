@@ -21,6 +21,8 @@ before_install:
 
 install:
     - sudo apt-add-repository -y ppa:reddit/ppa -y
+    - sudo apt-add-repository -y ppa:reddit/baseplate -y
+
     - sudo apt-get update -q
     - >
         sudo apt-get install -y \
