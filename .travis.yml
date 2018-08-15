@@ -25,6 +25,7 @@ install:
     - sudo apt-get update -q
     - >
         sudo apt-get install -y \
+            fbthrift-compiler \
             make \
             pylint \
             python-beautifulsoup \
@@ -36,7 +37,7 @@ install:
             python-pylons \
             python-tz \
             python-snudown \
-            thrift-compiler
+            python-fbthrift 
 
     - sudo pip install flake8>=3.5.0
     - sudo pip install baseplate
