@@ -35,7 +35,8 @@ install:
             python-pip \
             python-pylons \
             python-tz \
-            python-snudown 
+            python-snudown \
+            thrift-compiler
 
     - sudo pip install flake8>=3.5.0
     - sudo pip install baseplate
