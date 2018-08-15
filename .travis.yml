@@ -21,7 +21,6 @@ before_install:
 
 install:
     - sudo apt-add-repository -y ppa:reddit/ppa -y
-    - sudo apt-add-repository -y ppa:reddit/baseplate -y
 
     - sudo apt-get update -q
     - >
@@ -37,9 +36,9 @@ install:
             python-pylons \
             python-tz \
             python-snudown \ 
-            python-baseplate
 
     - sudo pip install flake8>=3.5.0
+    - sudo pip install baseplate
     - sudo pip install flake8_formatter_junit_xml
 #    - sudo install/travis.sh travis .
 
